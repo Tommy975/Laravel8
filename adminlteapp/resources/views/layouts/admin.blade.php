@@ -201,48 +201,47 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </ul>
                         </li> --}}
                         <li class="nav-item">
-                            <a href="" class="nav-link">
+                            <a href="starter" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
                                 </p>
                             </a>
                         </li>
-                    </ul>
-                    <div><h3>Menu</h3></div>
+                   
+                    
+                    <li class="nav-item nav-link"><p>Menu</p></li>
 
-                    <ul>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Calendar
-                                    <span class="right badge badge-danger">New</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Calendar
-                                    <span class="right badge badge-danger">New</span>
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Calendar
-                                    <span class="right badge badge-danger">New</span>
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                    <li class="nav-item has-treeview menu-open">
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Produits/Services
+                                <span class="right badge badge-danger">New</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Consultations
+                                <span class="right badge badge-danger">New</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-th"></i>
+                            <p>
+                                Calendar
+                                <span class="right badge badge-danger">New</span>
+                            </p>
+                        </a>
+                    </li>
                         <a href="#" class="nav-link active">
-                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <i class="nav-icon fas fa-users"></i>
                             <p>
                                 Authentication
                                 <i class="right fas fa-angle-left"></i>
@@ -252,18 +251,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <li class="nav-item">
                                 <a href="#" class="nav-link active">
                                     <i class="far fa-user nav-icon"></i>
-                                    <p>Users</p>r
+                                    <p>Users</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="far fa-users-crown nav-icon"></i>
                                     <p>Roles</p>
                                 </a>
                             </li>
                             <li>
                             <a href="#" class="nav-link">
-                                <i class="far fa-cirecle nav-icon"></i>
+                                <i class="far fa-key nav-icon"></i>
                                 <p>Permissions</p>
                                 </a>
                             </li>
@@ -271,7 +270,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </li> 
                 </nav>
                 <!-- /.sidebar-menu -->
-            </div>
+            </li<h3>
             <!-- /.sidebar -->
         </aside>
 
