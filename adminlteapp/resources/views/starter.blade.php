@@ -35,7 +35,7 @@
                
                   <div class="card">
                      <div class="card-header">
-                           <h5 class="m-0">Produits</h5>
+                           <h5 class="m-0">Services</h5>
                      </div>
                      <div class="card-body">
                            <h6 class="card-title">Special title treatment</h6>
