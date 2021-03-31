@@ -27,6 +27,10 @@ class HomeController extends Controller
     }
     
     public function starter_page(){
-        return view('starter');
+        return view('layouts/starter');
+    }
+    
+    public function services_page(){
+        return view('layouts/master');
     }
 }
