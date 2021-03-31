@@ -21,11 +21,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition dark-mode sidebar-mini">
     <div class="wrapper">
 
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-dark navbar-light">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -40,6 +40,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
 
             <!-- SEARCH FORM -->
+            <!-- Navbar Search -->
             <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
                     <input class="form-control form-control-navbar" type="search" placeholder="Search"
@@ -51,15 +52,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                 </div>
             </form>
-
-{{--                 
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
-                            class="fas fa-th-large"></i></a>
-                </li> --}}
             </ul>
         </nav>
         <!-- /.navbar -->
+
 
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -68,6 +64,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <img src="img/laravel.png" alt="AdminLTE Logo" class="brand-image " style="opacity: .8">
                 <span class="brand-text font-weight-light">AdminDashboard</span>
             </a>
+
 
             <!-- Sidebar -->
             <div class="sidebar">
@@ -81,10 +78,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                 </div>
 
+
+
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
+
+
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         {{--                       <li class="nav-item has-treeview menu-open">
@@ -110,6 +111,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </li>
                             </ul>
                         </li> --}}
+
+
                         <li class="nav-item">
                             <a href="starter" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -120,23 +123,23 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </li>
 
 
-                        <li class="nav-item nav-link">
-                            <p>Menu</p>
+                        <!-- Separator title menu header -->
+                        <li class="nav-header">
+                            <h3>Menu</h3>
                         </li>
 
-
+                        <!-- Menu items -->
                         <li class="nav-item">
                             <a href="services" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-cut"></i>
                                 <p>
-                                    Produits/Services
-                                    <span class="right badge badge-danger">New</span>
+                                    Produits/Service
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-clock"></i>
                                 <p>
                                     Consultations
                                     <span class="right badge badge-danger">New</span>
@@ -144,46 +147,99 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                            <a href="calendar" class="nav-link">
+                                <i class="nav-icon fas fa-calendar-check"></i>
                                 <p>
                                     Calendar
                                     <span class="right badge badge-danger">New</span>
                                 </p>
                             </a>
                         </li>
-                        <ul class="nav has-tree-view ">
+
+
+
+
+                        <!-- Aunthentications items -->
                         <li class="nav-item ">
                             <a href="#" class="nav-link ">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Authentication
-                                    <span class="right fas fa-angle-left"></span>
+                                    <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ">
-                                <i class="far fa-user nav-icon"></i>
-                                <p>Users</p>
-                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link ">
+                                        <i class="far fa-user nav-icon"></i>
+                                        <p>Users</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-crown nav-icon"></i>
+                                        <p>Roles</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-key nav-icon"></i>
+                                        <p>Permissions</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+
+
+
+                        <!-- Separator title menu header -->
+                        <li class="nav-header">
+                            <h3>UI Examples</h3>
+                        </li>
+
+
+                        <!-- CHARTS EXAMPLES -->
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="far fa-crown nav-icon"></i>
-                                <p>Roles</p>
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>
+                                    Charts
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="pages/charts/chartjs.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>ChartJS</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/flot.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Flot</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/inline.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Inline</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/charts/uplot.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>uPlot</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="nav-link">
-                                <i class="far fa-key nav-icon"></i>
-                                <p>Permissions</p>
-                            </a>
-                        </li></ul>
+                    </ul>
+                    <!-- /.sidebar-menu -->
                 </nav>
-                <!-- /.sidebar-menu -->
-                </li>
                 <!-- /.sidebar -->
         </aside>
+
 
 
         {{-- Page content --}}
@@ -194,21 +250,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- ./wrapper -->
 
-    <!-- REQUIRED SCRIPTS -->
+    
 
-    {{-- <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script> --}}
 
 
 
 </body>
-<!-- Main Footer -->
+<!-- MAIN FOOTER -->
 <footer class="main-footer">
-
+    <!-- REQUIRED SCRIPTS -->
     <script src="{{asset('/js/app.js')}}"></script>
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
