@@ -27,10 +27,14 @@ class HomeController extends Controller
     }
     
     public function starter_page(){
-        return view('layouts/starter');
+        return view('starter');
     }
     
     public function services_page(){
-        return view('layouts/master');
+        return view('admin/pages/services');
+    }
+    
+    public function calendar_page(){
+        return view('admin/pages/calendar');
     }
 }
